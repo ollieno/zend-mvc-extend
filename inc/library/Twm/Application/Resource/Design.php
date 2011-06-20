@@ -17,9 +17,7 @@ class Twm_Application_Resource_Design extends Zend_Application_Resource_Resource
     }
 
     protected function _initPackages($options) {
-
 	$Design = Twm::getDesign();
-
 	foreach ($options as $key => $packageOptions) {
 	    $Package = new Twm_Core_Design_Package($key, $packageOptions);
 	    $Design->addPackage($Package);

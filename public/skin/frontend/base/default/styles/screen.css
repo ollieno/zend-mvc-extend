@@ -1,1 +1,6 @@
 @charset "utf-8";
+.demo .column {
+    background-color: gray;
+    height:100px;
+    text-align: center;
+}
