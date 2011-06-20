@@ -14,6 +14,6 @@ define ( 'DESIGN_PATH', APPLICATION_PATH . '/design' );
 define ( 'LIB_PATH', ROOT_PATH . '/inc/library' );
 define ( 'DATA_PATH', ROOT_PATH . '/inc/data' );
 
-require_once LIB_PATH. '/Twm/Application.php';
-$application = new Twm_Application ( APPLICATION_ENV, CONFIG_PATH . '/application.ini' );
+require_once CORE_MODULE_PATH. 'Twm/Core/Application.php';
+$application = new Twm_Core_Application ( APPLICATION_ENV, CONFIG_PATH . '/application.ini' );
 $application->bootstrap ()->run();

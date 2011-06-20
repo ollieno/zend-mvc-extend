@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl" xml:lang="nl">
+    <head>
+	<?= $this->block->getChildHtml('head') ?>
+    </head>
+    <body class="demo showgrid">
+	<div class="container">
+	    <div class="span-24 column header-column prepend-top append-bottom">
+		<?= $this->block->getChildHtml('header') ?>
+	    </div>
+	    <div class="span-6 column left-column">
+  		The first column
+	    </div>
+	    <div class="span-12 column center-column">
+  		The center column
+	    </div>
+	    <div class="span-6 column right-column last">
+  		The last column
+	    </div>
+	    <div class="span-24 column footer-column prepend-top">
+		<?= $this->block->getChildHtml('footer') ?>
+	    </div>
+	</div>
+    </body>
+</html>
