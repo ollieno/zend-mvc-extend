@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl" xml:lang="nl">
+    <head>
+	<?= $this->block('head') ?>
+    </head>
+    <body>
+	<div class="container showgrid">
+	    <div class="page span-24">
+		<div id="header"><?= $this->block('header') ?></div>
+		<div class="wrapper prepend-top append-bottom clearfix">
+		    <div id="left" class="span-6"><?= $this->block('left') ?></div>
+		    <div id="content" class="span-18 last"><?= $this->block('content') ?></div>
+		</div>
+		<div id="footer" class="span-24"><?= $this->block('footer') ?></div>
+	    </div>
+	</div>
+    </body>
+</html>

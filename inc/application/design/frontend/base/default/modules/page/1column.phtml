@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="nl" xml:lang="nl">
+	<head>
+		<?= $this->block->getChildHtml('head') ?>
+	</head>
+	<body>
+		<div id="wrapper">
+			<a href="#nav" class="hide">Ga naar het hoofdmenu</a>
+			<div id="content">
+				<div class="container_16">
+					<div class="grid_16 content">
+						<?= $this->block->getChildHtml('content') ?>
+					</div>
+					<div class="clear">&nbsp;</div>
+				</div>
+			</div>
+			<div id="header">
+				<div class="container_16">
+					<?= $this->block->getChildHtml('header') ?>
+					<div class="clear">&nbsp;</div>
+				</div>
+			</div>
+			<?= $this->block->getChildHtml('footer') ?>
+			<?= $this->block->getChildHtml('menu') ?>
+		</div>
+	</body>
+</html>

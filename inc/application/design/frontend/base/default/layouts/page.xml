@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+	<block type="Twm_Core_Block_Template" name="root" template="page/2columns-right.phtml">
+	    <block type="Twm_Page_Block_Html_Head" name="head" template="page/html/head.phtml" >
+		<action method="addMeta" function="appendName" key="keywords" content="" />
+		<action method="addMeta" function="appendHttpEquiv" key="Content-Type" content="text/html; charset=UTF-8" />
+		<action method="addMeta" function="appendHttpEquiv" key="Content-Language" content="nl-NL" />
+		<action method="addCss" function="appendStylesheet" url="styles/960/960.css" media="screen, projection"/>
+		<action method="addCss" function="appendStylesheet" url="styles/screen.css" media="screen, projection" />
+		<action method="addCss" function="appendStylesheet" url="styles/screen-ie.css" media="screen, projection" conditional="lt IE 9" />
+		<action method="addCss" function="appendStylesheet" url="styles/screen-lt_ie7.css" media="screen, projection" conditional="lt IE 7" />
+<!--		<action method="addScript" function="appendFile" url="scripts/somescript.js" /> -->
+	    </block>
+
+	    <block type="Twm_Core_Block_Template" name="header" template="page/html/header.phtml" >
+	    </block>
+	    <block type="Twm_Core_Block_Template" name="footer" template="page/html/footer.phtml" />
+	</block>
+    </default>
+</layout>
